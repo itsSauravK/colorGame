@@ -24,6 +24,7 @@ var hardButton=document.querySelector("#hardBtn");
 				squares[i].style.display="none";
 
 		}
+		messageDisplay.textContent="";
 
 	});
 	
@@ -41,6 +42,7 @@ var hardButton=document.querySelector("#hardBtn");
 				squares[i].style.display="block";
 
 		}
+		messageDisplay.textContent="";
 	});
 
 
@@ -54,7 +56,9 @@ var hardButton=document.querySelector("#hardBtn");
 		//adding colors
 		squares[i].style.backgroundColor = colors[i];
 		}
-		h1.style.backgroundColor="#232323";
+		h1.style.backgroundColor="steelblue";
+		messageDisplay.textContent="";
+		this.textContent="New color";
 		
 	});
 
@@ -69,7 +73,7 @@ var hardButton=document.querySelector("#hardBtn");
 
 			if(clickedColor===pickedColor){
 				console.log(clickedColor+"==="+pickedColor);	
-				messageDisplay.textContent="Correct";
+				messageDisplay.textContent="Correct!";
 				changeColor(clickedColor);
 				h1.style.backgroundColor=clickedColor;
 				resetButton.textContent="Play again?";
