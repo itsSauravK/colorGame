@@ -16,6 +16,9 @@ margin:1.66%;
 h1{
 	color:white;
 }
-span{
-	color:white;
+
+#strip{
+	background: white;
+	height:30px;	
+	text-align: center;
 }
